@@ -1,0 +1,5 @@
+openai
+arxiv
+tavily-python
+python-dotenv
+ipython
