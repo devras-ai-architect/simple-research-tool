@@ -72,3 +72,83 @@ Wait for it to finish. This installs everything the tool needs.
 
 ### Step 5 — Add Your API Keys
 Inside the folder, create a new text file called `.env` and write:
+
+OPENAI_API_KEY=paste_your-openai-key-here
+TAVILY_API_KEY=paste_your-tavily-key-here
+
+Save it. This is the only file that is personal to you.
+
+> ⚠️ **Never share your `.env` file with anyone.** It contains your private API keys.
+
+---
+
+## 🚀 Every Time You Want to Use It
+
+### Step 1 — Open `main.py` in any text editor
+Find this line near the bottom:
+```python
+prompt_ = "Radio observations of recurrent novae"
+```
+Replace it with your own topic, for example:
+```python
+prompt_ = "effects of coffee on sleep"
+```
+Save the file.
+
+### Step 2 — Run the Tool
+In your terminal, type:
+```bash
+python main.py
+```
+Press Enter and wait. You will see it working — searching, thinking, writing.
+
+### Step 3 — Get Your Report
+The tool will print your full research report in the terminal.
+The HTML version can be opened in any browser like a webpage.
+
+---
+
+## 🌍 What Kind of Topics Can You Research?
+
+Anything! For example:
+- *"Latest treatments for diabetes"*
+- *"History of the Roman Empire"*
+- *"How does solar energy work"*
+- *"Best programming languages in 2026"*
+- *"Climate change effects on agriculture"*
+
+---
+
+## 📊 How It Works — Summary
+
+| Step | What Happens |
+|------|-------------|
+| You type a topic | Tool searches web + academic papers |
+| Wait ~1-2 minutes | Tool writes a full sourced report |
+| Reflection happens | Tool improves the report automatically |
+| HTML is generated | You get a nice webpage-style document |
+
+---
+
+## 📁 Project Structure
+
+simple-research-tool/
+├── main.py            # Main pipeline — run this file
+├── research_tools.py  # Search tools (arXiv + Tavily)
+├── requirements.txt   # Python dependencies
+├── .env               # Your API keys (never share this)
+└── README.md          # This guide
+
+## 🔧 Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| OpenAI GPT-4o | Writing and reflecting on reports |
+| Tavily Search | Searching the web |
+| arXiv API | Searching academic papers |
+| Python | Core programming language |
+
+---
+
+## 📄 License
+This project is open source and available under the [MIT License](LICENSE).
